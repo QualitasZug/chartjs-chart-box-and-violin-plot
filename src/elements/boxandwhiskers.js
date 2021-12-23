@@ -112,6 +112,9 @@ const BoxAndWiskers = Chart.elements.BoxAndWhiskers = ArrayElementBase.extend({
       if (vm.segmentColor) {
         ctx.strokeStyle = vm.segmentColor;
       }
+      if (vm.segmentWidth) {
+        ctx.lineWidth = vm.segmentWidth;
+      }
       ctx.beginPath();
       ctx.moveTo(x0, boxplot.segment);
       ctx.lineTo(x0 + width, boxplot.segment);
