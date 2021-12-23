@@ -25,8 +25,8 @@ export function toFixed(value) {
   return Number.parseFloat(value).toFixed(decimals);
 }
 
-const configKeys = ['outlierRadius', 'itemRadius', 'itemStyle', 'itemBackgroundColor', 'itemBorderColor', 'outlierColor', 'medianColor', 'segmentColor', 'hitPadding', 'outlierHitRadius', 'lowerColor'];
-const configKeyIsColor = [false, false, false, true, true, true, true, true, false, false, true];
+const configKeys = ['outlierRadius', 'itemRadius', 'itemStyle', 'itemBackgroundColor', 'itemBorderColor', 'outlierColor', 'medianColor', 'segmentColor', 'segmentWidth', 'hitPadding', 'outlierHitRadius', 'lowerColor'];
+const configKeyIsColor = [false, false, false, true, true, true, true, true, false, false, false, true];
 
 const array = {
   _elementOptions() {
